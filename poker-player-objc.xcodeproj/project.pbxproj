@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2AC3E9AA18F69BA8007B7B63 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC3E9A918F69BA8007B7B63 /* XCTest.framework */; };
+		2AC3E9BA18F69C6B007B7B63 /* PlayerServletTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC3E9B918F69C6B007B7B63 /* PlayerServletTest.m */; };
+		2AC3E9C018F6A4BF007B7B63 /* PlayerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC3E9BF18F6A4BF007B7B63 /* PlayerTest.m */; };
+		2ADB964018F592F7004B928D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ADB963F18F592F7004B928D /* Foundation.framework */; };
+		C8D730943D65EB9BEF72830B /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D739DEE7447798C877BFA8 /* Player.m */; };
+		C8D73204289A95F74178B364 /* BaseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D730426F30E2815998A3E7 /* BaseTest.m */; };
+		C8D734885457B45BE681A91C /* NSDictionary+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D73C5287926F5F5A242BBD /* NSDictionary+JSON.m */; };
+		C8D734C4B73697598DFA97D6 /* PlainLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D73D7A6F22DB5A6972C1E6 /* PlainLogger.m */; };
+		C8D735C86369B26BCF08ECC2 /* PlainLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D73D7A6F22DB5A6972C1E6 /* PlainLogger.m */; };
+		C8D73981B69490AF0C3F5686 /* PlayerServlet.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D7336B43EBE7616C72A969 /* PlayerServlet.m */; };
+		C8D73A0719797067E86F353E /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D739DEE7447798C877BFA8 /* Player.m */; };
+		C8D73C3E6B34D2FB68B1C84D /* NSDictionary+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D73C5287926F5F5A242BBD /* NSDictionary+JSON.m */; };
+		C8D73D1EA2BF5EC53C0F0FF4 /* PlayerServlet.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D7336B43EBE7616C72A969 /* PlayerServlet.m */; };
+		C8D73EF3C185FD8C377EA11D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D73CA9CA52E0EF16E4B47F /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2AC3E9B418F69BA8007B7B63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2ADB963418F592F7004B928D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2ADB963B18F592F7004B928D;
+			remoteInfo = "poker-player-objc";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2ADB963A18F592F7004B928D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2AC3E99818F69977007B7B63 /* poker-player-objc Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "poker-player-objc Tests-Info.plist"; sourceTree = "<group>"; };
+		2AC3E99E18F69977007B7B63 /* poker-player-objc Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "poker-player-objc Tests-Prefix.pch"; sourceTree = "<group>"; };
+		2AC3E9A818F69BA8007B7B63 /* poker-player-objc Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "poker-player-objc Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AC3E9A918F69BA8007B7B63 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2AC3E9B918F69C6B007B7B63 /* PlayerServletTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerServletTest.m; sourceTree = "<group>"; };
+		2AC3E9BF18F6A4BF007B7B63 /* PlayerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerTest.m; sourceTree = "<group>"; };
+		2ADB963C18F592F7004B928D /* player */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = player; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ADB963F18F592F7004B928D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C8D730426F30E2815998A3E7 /* BaseTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTest.m; sourceTree = "<group>"; };
+		C8D7319F628437EC9898F5B3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = README.md; sourceTree = "<group>"; };
+		C8D7336B43EBE7616C72A969 /* PlayerServlet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerServlet.m; sourceTree = "<group>"; };
+		C8D733806CC4DBE765099FED /* GNUmakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GNUmakefile; sourceTree = "<group>"; };
+		C8D73837C49632E9CFD82427 /* PlayerServlet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerServlet.h; sourceTree = "<group>"; };
+		C8D7395361B956EF5E124B31 /* PlainLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlainLogger.h; sourceTree = "<group>"; };
+		C8D739DEE7447798C877BFA8 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		C8D73C5287926F5F5A242BBD /* NSDictionary+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSON.m"; sourceTree = "<group>"; };
+		C8D73CA9CA52E0EF16E4B47F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C8D73D7A6F22DB5A6972C1E6 /* PlainLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlainLogger.m; sourceTree = "<group>"; };
+		C8D73D8613069782667C42CF /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		C8D73DB813C0D5C362B0A821 /* BaseTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTest.h; sourceTree = "<group>"; };
+		C8D73FB825EDE39B3AC9CAEA /* NSDictionary+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JSON.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2AC3E9A518F69BA8007B7B63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AC3E9AA18F69BA8007B7B63 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ADB963918F592F7004B928D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ADB964018F592F7004B928D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2AC3E99618F69977007B7B63 /* poker-player-objc Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2AC3E9BF18F6A4BF007B7B63 /* PlayerTest.m */,
+				2AC3E9B918F69C6B007B7B63 /* PlayerServletTest.m */,
+				2AC3E99718F69977007B7B63 /* Supporting Files */,
+				C8D730426F30E2815998A3E7 /* BaseTest.m */,
+				C8D73DB813C0D5C362B0A821 /* BaseTest.h */,
+			);
+			path = "poker-player-objc Tests";
+			sourceTree = "<group>";
+		};
+		2AC3E99718F69977007B7B63 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2AC3E99818F69977007B7B63 /* poker-player-objc Tests-Info.plist */,
+				2AC3E99E18F69977007B7B63 /* poker-player-objc Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2ADB963318F592F7004B928D = {
+			isa = PBXGroup;
+			children = (
+				2AC3E99618F69977007B7B63 /* poker-player-objc Tests */,
+				2ADB963E18F592F7004B928D /* Frameworks */,
+				2ADB963D18F592F7004B928D /* Products */,
+				C8D733806CC4DBE765099FED /* GNUmakefile */,
+				C8D73CA9CA52E0EF16E4B47F /* main.m */,
+				C8D7319F628437EC9898F5B3 /* README.md */,
+				C8D730D240EEDC8C4A4198B0 /* Classes */,
+			);
+			sourceTree = "<group>";
+		};
+		2ADB963D18F592F7004B928D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2ADB963C18F592F7004B928D /* player */,
+				2AC3E9A818F69BA8007B7B63 /* poker-player-objc Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2ADB963E18F592F7004B928D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2ADB963F18F592F7004B928D /* Foundation.framework */,
+				2AC3E9A918F69BA8007B7B63 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8D730D240EEDC8C4A4198B0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C8D73FB825EDE39B3AC9CAEA /* NSDictionary+JSON.h */,
+				C8D73C5287926F5F5A242BBD /* NSDictionary+JSON.m */,
+				C8D7395361B956EF5E124B31 /* PlainLogger.h */,
+				C8D73D7A6F22DB5A6972C1E6 /* PlainLogger.m */,
+				C8D73D8613069782667C42CF /* Player.h */,
+				C8D739DEE7447798C877BFA8 /* Player.m */,
+				C8D73837C49632E9CFD82427 /* PlayerServlet.h */,
+				C8D7336B43EBE7616C72A969 /* PlayerServlet.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2AC3E9A718F69BA8007B7B63 /* poker-player-objc Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AC3E9B618F69BA8007B7B63 /* Build configuration list for PBXNativeTarget "poker-player-objc Tests" */;
+			buildPhases = (
+				2AC3E9A418F69BA8007B7B63 /* Sources */,
+				2AC3E9A518F69BA8007B7B63 /* Frameworks */,
+				2AC3E9A618F69BA8007B7B63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AC3E9B518F69BA8007B7B63 /* PBXTargetDependency */,
+			);
+			name = "poker-player-objc Tests";
+			productName = "poker-player-objc Tests";
+			productReference = 2AC3E9A818F69BA8007B7B63 /* poker-player-objc Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2ADB963B18F592F7004B928D /* poker-player-objc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2ADB964A18F592F7004B928D /* Build configuration list for PBXNativeTarget "poker-player-objc" */;
+			buildPhases = (
+				2ADB963818F592F7004B928D /* Sources */,
+				2ADB963918F592F7004B928D /* Frameworks */,
+				2ADB963A18F592F7004B928D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "poker-player-objc";
+			productName = hello;
+			productReference = 2ADB963C18F592F7004B928D /* player */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2ADB963418F592F7004B928D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = wcs;
+				TargetAttributes = {
+					2AC3E9A718F69BA8007B7B63 = {
+						TestTargetID = 2ADB963B18F592F7004B928D;
+					};
+				};
+			};
+			buildConfigurationList = 2ADB963718F592F7004B928D /* Build configuration list for PBXProject "poker-player-objc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2ADB963318F592F7004B928D;
+			productRefGroup = 2ADB963D18F592F7004B928D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2ADB963B18F592F7004B928D /* poker-player-objc */,
+				2AC3E9A718F69BA8007B7B63 /* poker-player-objc Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2AC3E9A618F69BA8007B7B63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2AC3E9A418F69BA8007B7B63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AC3E9BA18F69C6B007B7B63 /* PlayerServletTest.m in Sources */,
+				2AC3E9C018F6A4BF007B7B63 /* PlayerTest.m in Sources */,
+				C8D73204289A95F74178B364 /* BaseTest.m in Sources */,
+				C8D73C3E6B34D2FB68B1C84D /* NSDictionary+JSON.m in Sources */,
+				C8D734C4B73697598DFA97D6 /* PlainLogger.m in Sources */,
+				C8D730943D65EB9BEF72830B /* Player.m in Sources */,
+				C8D73981B69490AF0C3F5686 /* PlayerServlet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ADB963818F592F7004B928D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8D73EF3C185FD8C377EA11D /* main.m in Sources */,
+				C8D734885457B45BE681A91C /* NSDictionary+JSON.m in Sources */,
+				C8D735C86369B26BCF08ECC2 /* PlainLogger.m in Sources */,
+				C8D73A0719797067E86F353E /* Player.m in Sources */,
+				C8D73D1EA2BF5EC53C0F0FF4 /* PlayerServlet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2AC3E9B518F69BA8007B7B63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2ADB963B18F592F7004B928D /* poker-player-objc */;
+			targetProxy = 2AC3E9B418F69BA8007B7B63 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2AC3E9B718F69BA8007B7B63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "poker-player-objc Tests/poker-player-objc Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "poker-player-objc Tests/poker-player-objc Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		2AC3E9B818F69BA8007B7B63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "poker-player-objc Tests/poker-player-objc Tests-Prefix.pch";
+				INFOPLIST_FILE = "poker-player-objc Tests/poker-player-objc Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		2ADB964818F592F7004B928D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2ADB964918F592F7004B928D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2ADB964B18F592F7004B928D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				PRODUCT_NAME = player;
+			};
+			name = Debug;
+		};
+		2ADB964C18F592F7004B928D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				PRODUCT_NAME = player;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2AC3E9B618F69BA8007B7B63 /* Build configuration list for PBXNativeTarget "poker-player-objc Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AC3E9B718F69BA8007B7B63 /* Debug */,
+				2AC3E9B818F69BA8007B7B63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2ADB963718F592F7004B928D /* Build configuration list for PBXProject "poker-player-objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ADB964818F592F7004B928D /* Debug */,
+				2ADB964918F592F7004B928D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2ADB964A18F592F7004B928D /* Build configuration list for PBXNativeTarget "poker-player-objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ADB964B18F592F7004B928D /* Debug */,
+				2ADB964C18F592F7004B928D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2ADB963418F592F7004B928D /* Project object */;
+}
