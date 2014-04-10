@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PlainLogger.h"
-#import "PlayerServlet.h"
+#import "Classes/PlainLogger.h"
+#import "Classes/PlayerServlet.h"
 
 int main(int argc, const char *argv[]) {
 	NSAutoreleasePool *myPool = [[NSAutoreleasePool alloc] init];
