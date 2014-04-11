@@ -27,6 +27,14 @@
 	self.object = [[[testClass alloc] init] autorelease];
 }
 
++ (id)defaultTestSuite {
+	XCTestSuite *testSuite = [super defaultTestSuite];
+	if ([testSuite.name isEqualToString:@"BaseTest"]) {
+		return nil;
+	}
+	return testSuite;
+}
+
 - (void)tearDown {
 	[_object release];
 	[super tearDown];
