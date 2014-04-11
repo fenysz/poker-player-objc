@@ -1,43 +1,42 @@
 //
-//  PlayerServlet.m
-//  poker-player-objc
+//  Servlet.m
+//  Request handler object
 //
 //  Created by Kákonyi Roland on 2014.04.10..
-//  Copyright (c) 2014 wcs. All rights reserved.
 
-
-
-#import "PlayerServlet.h"
+#import "Servlet.h"
 #import "NSDictionary+JSON.h"
 #import "Player.h"
 
-
-@implementation PlayerServlet {
+@implementation Servlet {
 
 }
 
-- (NSString *)doPost:(NSString *)action {
+- (NSString *)dispatch:(NSString *)action {
 	NSString *response = @"";
-
 
 	if ([action isEqualToString:@"version"]) {
 		return Player.versionString;
 	}
-
-	if ([action isEqualToString:@"bet_request"]) {
-		NSDictionary *requestJSON = [self readGameState];
+	else if ([action isEqualToString:@"bet_request"]) {
+		NSDictionary *requestJSON = [self requestJSON];
 		return [NSString stringWithFormat:@"%d", [[[[Player alloc] init] autorelease] betRequest:requestJSON]];
 	}
-
-	if ([action isEqualToString:@"showdown"]) {
-		NSDictionary *requestJSON = [self readGameState];
+	else if ([action isEqualToString:@"showdown"]) {
+		NSDictionary *requestJSON = [self requestJSON];
 		[[[[Player alloc] init] autorelease] showDown:requestJSON];
 	}
 
 	return response;
 }
 
-- (NSDictionary *)readGameState {
+- (NSDictionary *)requestJSON {
+	NSMutableString *inputString = [self readFromStdIn];
+	NSDictionary *requestJSON = [NSDictionary fromJsonString:inputString];
+	return requestJSON;
+}
+
+- (NSMutableString *)readFromStdIn {
 	NSFileHandle *inputFile = [NSFileHandle fileHandleWithStandardInput];
 	NSMutableString *inputString = [NSMutableString string];
 	do {
@@ -49,9 +48,7 @@
 		[tmp replaceOccurrencesOfString:@"\n" withString:@" " options:0 range:NSMakeRange(0, [tmp length])];
 		[inputString appendString:tmp];
 	} while (false);
-
-	NSDictionary *requestJSON = [NSDictionary fromJsonString:inputString];
-	return requestJSON;
+	return inputString;
 }
 
 - (void)dealloc {

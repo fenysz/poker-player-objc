@@ -1,26 +1,21 @@
 //
 //  NSDictionary+JSON.m
-//  poker-player-objc
+//  NSDictionary from JSON string converter
 //
 //  Created by Kákonyi Roland on 2014.04.10..
-//  Copyright (c) 2014 wcs. All rights reserved.
-
-
-
 #import "NSDictionary+JSON.h"
-
 
 @implementation NSDictionary (JSON)
 
-+ (NSDictionary *)fromJsonString:(NSString *)request {
++ (NSDictionary *)fromJsonString:(NSString *)jsonString {
 	NSError *e = nil;
-	NSDictionary *JSON =
-		[NSJSONSerialization JSONObjectWithData:[request dataUsingEncoding:NSUTF8StringEncoding]
+	NSDictionary *jsonDict =
+		[NSJSONSerialization JSONObjectWithData:[jsonString dataUsingEncoding:NSUTF8StringEncoding]
 										options:NSJSONReadingMutableContainers
 										  error:&e];
 	if (e != nil) {
 		return nil;
 	}
-	return JSON;
+	return jsonDict;
 }
 @end

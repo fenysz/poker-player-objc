@@ -1,24 +1,22 @@
 //
 //  Player.m
-//  poker-player-objc
+//  Player controller
 //
 //  Created by Kákonyi Roland on 2014.04.10..
-//  Copyright (c) 2014 wcs. All rights reserved.
-
-
 
 #import "Player.h"
 
+static NSString *const kVersionString = @"Default Objc folding player";
 
 @implementation Player {
 
 }
 
 + (NSString *)versionString {
-	return @"Default Objc folding player";
+	return kVersionString;
 }
 
-- (void)showDown:(NSDictionary *)dictionary {
+- (void)showDown:(NSDictionary *)gamestate {
 
 }
 

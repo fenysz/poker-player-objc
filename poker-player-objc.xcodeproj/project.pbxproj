@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2AC3E9AA18F69BA8007B7B63 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC3E9A918F69BA8007B7B63 /* XCTest.framework */; };
-		2AC3E9BA18F69C6B007B7B63 /* PlayerServletTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC3E9B918F69C6B007B7B63 /* PlayerServletTest.m */; };
+		2AC3E9BA18F69C6B007B7B63 /* ServletTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC3E9B918F69C6B007B7B63 /* ServletTest.m */; };
 		2AC3E9C018F6A4BF007B7B63 /* PlayerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC3E9BF18F6A4BF007B7B63 /* PlayerTest.m */; };
 		2ADB964018F592F7004B928D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ADB963F18F592F7004B928D /* Foundation.framework */; };
 		C8D730943D65EB9BEF72830B /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D739DEE7447798C877BFA8 /* Player.m */; };
@@ -16,10 +16,10 @@
 		C8D734885457B45BE681A91C /* NSDictionary+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D73C5287926F5F5A242BBD /* NSDictionary+JSON.m */; };
 		C8D734C4B73697598DFA97D6 /* PlainLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D73D7A6F22DB5A6972C1E6 /* PlainLogger.m */; };
 		C8D735C86369B26BCF08ECC2 /* PlainLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D73D7A6F22DB5A6972C1E6 /* PlainLogger.m */; };
-		C8D73981B69490AF0C3F5686 /* PlayerServlet.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D7336B43EBE7616C72A969 /* PlayerServlet.m */; };
+		C8D73981B69490AF0C3F5686 /* Servlet.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D7336B43EBE7616C72A969 /* Servlet.m */; };
 		C8D73A0719797067E86F353E /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D739DEE7447798C877BFA8 /* Player.m */; };
 		C8D73C3E6B34D2FB68B1C84D /* NSDictionary+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D73C5287926F5F5A242BBD /* NSDictionary+JSON.m */; };
-		C8D73D1EA2BF5EC53C0F0FF4 /* PlayerServlet.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D7336B43EBE7616C72A969 /* PlayerServlet.m */; };
+		C8D73D1EA2BF5EC53C0F0FF4 /* Servlet.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D7336B43EBE7616C72A969 /* Servlet.m */; };
 		C8D73EF3C185FD8C377EA11D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D73CA9CA52E0EF16E4B47F /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -46,19 +46,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2AC3E99818F69977007B7B63 /* poker-player-objc Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "poker-player-objc Tests-Info.plist"; sourceTree = "<group>"; };
-		2AC3E99E18F69977007B7B63 /* poker-player-objc Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "poker-player-objc Tests-Prefix.pch"; sourceTree = "<group>"; };
+		2AC3E99818F69977007B7B63 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		2AC3E99E18F69977007B7B63 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		2AC3E9A818F69BA8007B7B63 /* poker-player-objc Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "poker-player-objc Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AC3E9A918F69BA8007B7B63 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		2AC3E9B918F69C6B007B7B63 /* PlayerServletTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerServletTest.m; sourceTree = "<group>"; };
+		2AC3E9B918F69C6B007B7B63 /* ServletTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServletTest.m; sourceTree = "<group>"; };
 		2AC3E9BF18F6A4BF007B7B63 /* PlayerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerTest.m; sourceTree = "<group>"; };
 		2ADB963C18F592F7004B928D /* player */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = player; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ADB963F18F592F7004B928D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C8D730426F30E2815998A3E7 /* BaseTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTest.m; sourceTree = "<group>"; };
 		C8D7319F628437EC9898F5B3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = README.md; sourceTree = "<group>"; };
-		C8D7336B43EBE7616C72A969 /* PlayerServlet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerServlet.m; sourceTree = "<group>"; };
+		C8D7336B43EBE7616C72A969 /* Servlet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Servlet.m; sourceTree = "<group>"; };
 		C8D733806CC4DBE765099FED /* GNUmakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GNUmakefile; sourceTree = "<group>"; };
-		C8D73837C49632E9CFD82427 /* PlayerServlet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerServlet.h; sourceTree = "<group>"; };
+		C8D73837C49632E9CFD82427 /* Servlet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Servlet.h; sourceTree = "<group>"; };
 		C8D7395361B956EF5E124B31 /* PlainLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlainLogger.h; sourceTree = "<group>"; };
 		C8D739DEE7447798C877BFA8 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		C8D73C5287926F5F5A242BBD /* NSDictionary+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSON.m"; sourceTree = "<group>"; };
@@ -89,23 +89,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2AC3E99618F69977007B7B63 /* poker-player-objc Tests */ = {
+		2AC3E99618F69977007B7B63 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				2AC3E9BF18F6A4BF007B7B63 /* PlayerTest.m */,
-				2AC3E9B918F69C6B007B7B63 /* PlayerServletTest.m */,
+				2AC3E9B918F69C6B007B7B63 /* ServletTest.m */,
 				2AC3E99718F69977007B7B63 /* Supporting Files */,
 				C8D730426F30E2815998A3E7 /* BaseTest.m */,
 				C8D73DB813C0D5C362B0A821 /* BaseTest.h */,
 			);
-			path = "poker-player-objc Tests";
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		2AC3E99718F69977007B7B63 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2AC3E99818F69977007B7B63 /* poker-player-objc Tests-Info.plist */,
-				2AC3E99E18F69977007B7B63 /* poker-player-objc Tests-Prefix.pch */,
+				2AC3E99818F69977007B7B63 /* Tests-Info.plist */,
+				2AC3E99E18F69977007B7B63 /* Tests-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -113,7 +113,7 @@
 		2ADB963318F592F7004B928D = {
 			isa = PBXGroup;
 			children = (
-				2AC3E99618F69977007B7B63 /* poker-player-objc Tests */,
+				2AC3E99618F69977007B7B63 /* Tests */,
 				2ADB963E18F592F7004B928D /* Frameworks */,
 				2ADB963D18F592F7004B928D /* Products */,
 				C8D733806CC4DBE765099FED /* GNUmakefile */,
@@ -150,8 +150,8 @@
 				C8D73D7A6F22DB5A6972C1E6 /* PlainLogger.m */,
 				C8D73D8613069782667C42CF /* Player.h */,
 				C8D739DEE7447798C877BFA8 /* Player.m */,
-				C8D73837C49632E9CFD82427 /* PlayerServlet.h */,
-				C8D7336B43EBE7616C72A969 /* PlayerServlet.m */,
+				C8D73837C49632E9CFD82427 /* Servlet.h */,
+				C8D7336B43EBE7616C72A969 /* Servlet.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -201,7 +201,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = wcs;
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					2AC3E9A718F69BA8007B7B63 = {
 						TestTargetID = 2ADB963B18F592F7004B928D;
@@ -241,13 +241,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AC3E9BA18F69C6B007B7B63 /* PlayerServletTest.m in Sources */,
+				2AC3E9BA18F69C6B007B7B63 /* ServletTest.m in Sources */,
 				2AC3E9C018F6A4BF007B7B63 /* PlayerTest.m in Sources */,
 				C8D73204289A95F74178B364 /* BaseTest.m in Sources */,
 				C8D73C3E6B34D2FB68B1C84D /* NSDictionary+JSON.m in Sources */,
 				C8D734C4B73697598DFA97D6 /* PlainLogger.m in Sources */,
 				C8D730943D65EB9BEF72830B /* Player.m in Sources */,
-				C8D73981B69490AF0C3F5686 /* PlayerServlet.m in Sources */,
+				C8D73981B69490AF0C3F5686 /* Servlet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +259,7 @@
 				C8D734885457B45BE681A91C /* NSDictionary+JSON.m in Sources */,
 				C8D735C86369B26BCF08ECC2 /* PlainLogger.m in Sources */,
 				C8D73A0719797067E86F353E /* Player.m in Sources */,
-				C8D73D1EA2BF5EC53C0F0FF4 /* PlayerServlet.m in Sources */,
+				C8D73D1EA2BF5EC53C0F0FF4 /* Servlet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,12 +283,12 @@
 					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "poker-player-objc Tests/poker-player-objc Tests-Prefix.pch";
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "poker-player-objc Tests/poker-player-objc Tests-Info.plist";
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -303,8 +303,8 @@
 					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "poker-player-objc Tests/poker-player-objc Tests-Prefix.pch";
-				INFOPLIST_FILE = "poker-player-objc Tests/poker-player-objc Tests-Info.plist";
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};

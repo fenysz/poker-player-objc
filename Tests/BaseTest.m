@@ -3,7 +3,6 @@
 //  poker-player-objc
 //
 //  Created by Kákonyi Roland on 2014.04.10..
-//  Copyright (c) 2014 wcs. All rights reserved.
 //
 
 #import "BaseTest.h"
@@ -18,7 +17,9 @@
 	}
 
 	if (testClass == nil) {
-		testClass = NSClassFromString([NSStringFromClass(self.class) stringByReplacingOccurrencesOfString:@"Test" withString:@""]);
+		NSString *classString = NSStringFromClass(self.class);
+		NSRange lastTestStringRange = [classString rangeOfString:@"Test" options:NSBackwardsSearch];
+		testClass = NSClassFromString([classString stringByReplacingCharactersInRange:lastTestStringRange withString:@""]);
 	}
 	if (testClass == nil) {
 		XCTFail(@"Set className!!!");
