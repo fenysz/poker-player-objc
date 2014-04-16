@@ -20,11 +20,11 @@
 	}
 	else if ([action isEqualToString:@"bet_request"]) {
 		NSDictionary *requestJSON = [self requestJSON];
-		return [NSString stringWithFormat:@"%d", [[[[Player alloc] init] autorelease] betRequest:requestJSON]];
+		return [NSString stringWithFormat:@"%d", [[[Player alloc] init] betRequest:requestJSON]];
 	}
 	else if ([action isEqualToString:@"showdown"]) {
 		NSDictionary *requestJSON = [self requestJSON];
-		[[[[Player alloc] init] autorelease] showDown:requestJSON];
+		[[[Player alloc] init] showDown:requestJSON];
 	}
 
 	return response;
@@ -44,7 +44,7 @@
 		if ([data length] == 0) {
 			break;
 		}
-		NSMutableString *tmp = [[[NSMutableString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
+		NSMutableString *tmp = [[NSMutableString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 		[tmp replaceOccurrencesOfString:@"\n" withString:@" " options:0 range:NSMakeRange(0, [tmp length])];
 		[inputString appendString:tmp];
 	} while (false);
@@ -55,7 +55,6 @@
 #if DEBUG
 	NSLog(@"dealloc %@", NSStringFromClass(self.class));
 #endif
-	[super dealloc];
 }
 
 @end

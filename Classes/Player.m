@@ -28,6 +28,5 @@ static NSString *const kVersionString = @"Default Objc folding player";
 #if DEBUG
 	NSLog(@"dealloc %@", NSStringFromClass(self.class));
 #endif
-	[super dealloc];
 }
 @end

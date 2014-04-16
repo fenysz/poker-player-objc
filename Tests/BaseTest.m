@@ -24,7 +24,7 @@
 	if (testClass == nil) {
 		XCTFail(@"Set className!!!");
 	}
-	self.object = [[[testClass alloc] init] autorelease];
+	self.object = [[testClass alloc] init];
 }
 
 + (id)defaultTestSuite {
@@ -36,7 +36,6 @@
 }
 
 - (void)tearDown {
-	[_object release];
 	[super tearDown];
 }
 

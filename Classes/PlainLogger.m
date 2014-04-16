@@ -18,7 +18,6 @@
 	NSFileHandle *fileHandle = [NSFileHandle fileHandleWithStandardOutput];
 	[fileHandle
 		writeData:[formattedString dataUsingEncoding:NSNEXTSTEPStringEncoding]];
-	[formattedString release];
 }
 
 @end
